@@ -45,13 +45,13 @@ spitToVector <- function(l)
 }
 
 # Recursive search
-getAllGen <- function(t, x, vectorize=TRUE) 
+getAllGen <- function(t, x, vectorize=TRUE, maxgen=20) 
 {
   out <- list()
   curr.gen <- x
   generation <- 1
   
-  while (!is.null(curr.gen))
+  while (!is.null(curr.gen) && generation <=maxgen)
   {
     out[[generation]] <- curr.gen
     next.gen <- NULL
