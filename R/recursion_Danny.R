@@ -1,3 +1,4 @@
+# read the data
 t.in <- read.delim("~/projects/Danny/MichalExampleRecursion.txt")
 
 t.in <- as.matrix(t.in)
